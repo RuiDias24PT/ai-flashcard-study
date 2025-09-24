@@ -16,7 +16,7 @@ export default [
         ecmaVersion: "latest",
         sourceType: "module",
         ecmaFeatures: {
-          jsx: true, // Enable JSX parsing
+          jsx: true,
         },
       },
       globals: {
@@ -24,7 +24,7 @@ export default [
         document: "readonly",
         localStorage: "readonly",
         setTimeout: "readonly",
-        React: "readonly", // Treat React as a readonly global
+        React: "readonly",
       },
     },
     plugins: {
@@ -40,7 +40,7 @@ export default [
         "warn",
         {
           argsIgnorePattern: "^_",
-          varsIgnorePattern: "^React$", // ✅ Ignore React for unused-vars
+          varsIgnorePattern: "^React$",
         },
       ],
     },
