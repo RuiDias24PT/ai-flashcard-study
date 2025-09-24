@@ -1,4 +1,6 @@
-import NavBar from "~/components/navBar";
+import NavBar from "~/components/NavBar";
+import Toggler from "~/components/Toggler";
+import { ThemeProvider } from "~/context/ThemeContext";
 export function meta() {
   return [
     { title: "StudyAI" },
@@ -13,11 +15,11 @@ export function meta() {
 export default function Home() {
   return (
     <>
-      <NavBar />
-      <main className="p-8">
-        <p>Scroll down to see if the navbar stays on top.</p>
-        <div style={{ height: "2000px" }} /> {/* fake scroll */}
-      </main>
+      <ThemeProvider>
+        <NavBar />
+        <div className="h-40">Teste</div>
+        <Toggler />
+      </ThemeProvider>
     </>
   );
 }

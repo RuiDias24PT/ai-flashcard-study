@@ -15,10 +15,16 @@ export default [
       parserOptions: {
         ecmaVersion: "latest",
         sourceType: "module",
+        ecmaFeatures: {
+          jsx: true, // Enable JSX parsing
+        },
       },
       globals: {
         window: "readonly",
         document: "readonly",
+        localStorage: "readonly",
+        setTimeout: "readonly",
+        React: "readonly", // Treat React as a readonly global
       },
     },
     plugins: {
@@ -32,7 +38,10 @@ export default [
       "react/react-in-jsx-scope": "off",
       "@typescript-eslint/no-unused-vars": [
         "warn",
-        { argsIgnorePattern: "^_" },
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^React$", // ✅ Ignore React for unused-vars
+        },
       ],
     },
     settings: {
