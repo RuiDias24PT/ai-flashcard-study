@@ -6,6 +6,16 @@
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@layer base {
+  html {
+    @apply min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100;
+  }
+
+  html.dark {
+    @apply min-h-screen from-slate-900 via-slate-800 to-slate-900;
+  }
+}
+
 html.theme-transition,
 html.theme-transition * {
   @apply transition-all duration-300 ease-in-out;

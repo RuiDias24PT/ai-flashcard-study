@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md z-50">
+    <nav className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-70">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
           StudyAI
