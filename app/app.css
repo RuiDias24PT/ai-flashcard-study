@@ -16,6 +16,14 @@
   }
 }
 
+:root {
+  --text-color: #333;
+  --hover-color: #666;
+  --primary-color: #000;
+  --primary-hover-color: #444;
+  --menu-font-family: 'Inter', sans-serif;
+}
+
 html.theme-transition,
 html.theme-transition * {
   @apply transition-all duration-300 ease-in-out;

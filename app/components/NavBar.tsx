@@ -1,29 +1,17 @@
-import React from "react";
+import { ThemeToggleButton } from "app/components/ThemeToggleButton";
 
 export default function NavBar() {
   return (
-    <nav className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-70">
-      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-          StudyAI
-        </h1>
-        <ul className="flex space-x-6 text-gray-700 dark:text-gray-200">
-          <li>
-            <a href="#features" className="hover:underline">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="hover:underline">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:underline">
-              About
-            </a>
-          </li>
-        </ul>
+    <nav className="h-16 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 sticky top-0">
+      <div className="flex items-center justify-between w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div className="flex items-center gap-3">
+          <img src="/brain-logo.svg" alt="StudyAI Logo" className="w-9 h-9" />
+          <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">
+            StudyAI
+          </h1>
+        </div>
+
+        <ThemeToggleButton />
       </div>
     </nav>
   );
