@@ -1,0 +1,13 @@
+{
+  "navbar": {
+    "decks": "Decks",
+    "aiGenerator": "AI Generator"
+  },
+  "heroSection": {
+    "title": "Learn Smarter, Achieve More",
+    "paragraph": "Unlock your potential with guided study resources designed for success.",
+    "button": "Get Started"
+  }
+
+
+}
