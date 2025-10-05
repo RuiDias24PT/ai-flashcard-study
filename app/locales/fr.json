@@ -1,1 +1,11 @@
-{}
+{
+  "navbar": {
+    "decks": "Cartes",
+    "aiGenerator": "Générateur IA"
+  },
+  "heroSection": {
+    "title": "Apprenez plus intelligemment, réussissez davantage",
+    "paragraph": "Déverrouillez votre potentiel grâce à des ressources d'étude guidées conçues pour réussir.",
+    "button": "Commencer"
+  }
+}

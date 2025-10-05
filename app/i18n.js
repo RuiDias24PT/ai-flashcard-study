@@ -15,10 +15,19 @@ const resources = {
   ar: { translation: ar },
 };
 
+const getSavedLang = () => {
+  if (typeof window !== "undefined") {
+    return localStorage.getItem("language");
+  }
+  return null;
+};
+
+const savedLang = getSavedLang() || "en";
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
-
+  lng: savedLang,
+  fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },

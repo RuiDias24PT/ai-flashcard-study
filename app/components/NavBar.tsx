@@ -3,6 +3,7 @@ import { BookOpen } from "lucide-react";
 import { Sparkles } from "lucide-react";
 import { NavItem } from "app/components/NavItem";
 import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -21,8 +22,10 @@ export default function NavBar() {
             <NavItem icon={Sparkles} label={t("AI Generator")} />
           </div>
         </div>
-
-        <ThemeToggleButton />
+        <div className="flex items-center gap-6">
+          <LanguageSwitcher />
+          <ThemeToggleButton />
+        </div>
       </div>
     </nav>
   );
