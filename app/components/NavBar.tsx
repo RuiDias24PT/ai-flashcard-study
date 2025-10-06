@@ -1,9 +1,8 @@
 import { ThemeToggleButton } from "app/components/ThemeToggleButton";
-import { BookOpen } from "lucide-react";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Menu, BookOpen } from "lucide-react";
 import { NavItem } from "app/components/NavItem";
 import { useTranslation } from "react-i18next";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { LanguageSwitcher } from "app/components/LanguageSwitcher";
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -17,14 +16,19 @@ export default function NavBar() {
               StudyAI
             </h1>
           </div>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center md:gap-10 lg:gap-14">
             <NavItem icon={BookOpen} label={t("Decks")} />
             <NavItem icon={Sparkles} label={t("AI Generator")} />
           </div>
         </div>
-        <div className="flex items-center gap-6">
-          <LanguageSwitcher />
-          <ThemeToggleButton />
+        <div className="flex items-center">
+          <div className="hidden sm:flex gap-6">
+            <LanguageSwitcher />
+            <ThemeToggleButton />
+          </div>
+          <button className="sm:hidden p-2">
+            <Menu className="w-6 h-6 text-slate-900 dark:text-white" />
+          </button>
         </div>
       </div>
     </nav>
