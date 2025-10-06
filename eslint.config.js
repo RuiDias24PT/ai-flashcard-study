@@ -4,6 +4,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import ts from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import prettier from "eslint-plugin-prettier";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
@@ -20,11 +21,8 @@ export default [
         },
       },
       globals: {
-        window: "readonly",
-        document: "readonly",
-        localStorage: "readonly",
-        setTimeout: "readonly",
-        React: "readonly",
+        ...globals.browser,
+        ...globals.es2021,
       },
     },
     plugins: {
