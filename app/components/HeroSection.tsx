@@ -18,7 +18,7 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl mb-6 max-w-2xl">
           {t("heroSection.paragraph")}
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-lg font-medium transition cursor-pointer">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-lg font-medium transition transform hover:-translate-y-1 cursor-pointer">
           {t("heroSection.button")}
         </button>
       </div>
