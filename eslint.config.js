@@ -41,6 +41,7 @@ export default [
           varsIgnorePattern: "^React$",
         },
       ],
+      "no-undef": "off",
     },
     settings: {
       react: { version: "detect" },
