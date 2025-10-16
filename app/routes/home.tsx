@@ -1,6 +1,3 @@
-import NavBar from "~/components/NavBar";
-import { ThemeProvider } from "~/context/ThemeContext";
-
 import HeroSection from "~/components/HeroSection";
 export function meta() {
   return [
@@ -16,10 +13,7 @@ export function meta() {
 export default function Home() {
   return (
     <>
-      <ThemeProvider>
-        <NavBar />
-        <HeroSection />
-      </ThemeProvider>
+      <HeroSection />
     </>
   );
 }

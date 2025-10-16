@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
+import Paths from "~/routes/paths";
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
@@ -18,9 +20,15 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl mb-6 max-w-2xl">
           {t("heroSection.paragraph")}
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-lg font-medium transition transform hover:-translate-y-1 cursor-pointer">
+        <Link
+          to={Paths.AI_GENERATOR}
+          role="button"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 
+             rounded-2xl shadow-lg font-medium transition transform 
+             hover:-translate-y-1 cursor-pointer inline-block text-center"
+        >
           {t("heroSection.button")}
-        </button>
+        </Link>
       </div>
     </section>
   );

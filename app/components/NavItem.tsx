@@ -1,21 +1,23 @@
 import React from "react";
+import { Link } from "react-router";
 
 interface NavItemProps {
   icon: React.ElementType;
   label: string;
-  onClick?: () => void;
+  route: string;
 }
 
-export function NavItem({ icon: Icon, label, onClick }: NavItemProps) {
+export function NavItem({ icon: Icon, label, route }: NavItemProps) {
   return (
-    <button
-      onClick={onClick}
-      className="flex items-center gap-4 p-2 rounded-md 
-                 hover:bg-gray-300 dark:hover:bg-slate-800 
-                 cursor-pointer transition-colors"
+    <Link
+      to={route}
+      role="button"
+      className="flex items-center gap-4 p-2 px-3 rounded-md 
+             
+             hover:bg-gray-100 dark:hover:bg-slate-700"
     >
       <Icon className="w-4 h-4 dark:text-white" />
       <span className="text-sm dark:text-white">{label}</span>
-    </button>
+    </Link>
   );
 }
