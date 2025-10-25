@@ -9,7 +9,7 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <nav className="h-16 bg-white/80 z-50 fixed backdrop-blur-md top-0 dark:bg-slate-900/80 border-slate-200 w-full">
+    <nav className="w-full h-16 bg-white/80 z-50 fixed backdrop-blur-md top-0 border-b border-gray-900 border-slate-200 dark:bg-slate-900/80  dark:border-slate-700 ">
       <div className="flex items-center justify-between w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center gap-14">
           <Link to={Paths.HOME}>
