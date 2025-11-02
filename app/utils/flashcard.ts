@@ -18,7 +18,7 @@ export const generateFlashcards = async (
   try {
     return JSON.parse(text);
   } catch (err) {
-    console.error("Failed to parse AI response:", text);
+    console.error("Failed to parse AI response:", err);
     throw new Error("Invalid AI response format");
   }
 };
