@@ -16,8 +16,8 @@ export function NavItem({ icon: Icon, label, route }: NavItemProps) {
              
              hover:bg-gray-100 dark:hover:bg-slate-700"
     >
-      <Icon className="w-4 h-4 dark:text-white" />
-      <span className="text-sm dark:text-white">{label}</span>
+      <Icon className="w-5 h-5 dark:text-white" />
+      <span className=" dark:text-white">{label}</span>
     </Link>
   );
 }

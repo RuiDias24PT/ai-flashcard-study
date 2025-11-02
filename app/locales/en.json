@@ -2,17 +2,17 @@
   "aiGenerator": {
     "title": "AI-Powered Flashcard Creation",
     "description": "Easily generate flashcards from your study materials using advanced AI technology.",
-    "input":{
+    "input": {
       "prompt": {
-        "label":"Flashcard Content",
-        "placeholder":"Enter the subject, key points or brief description of the material you want to create flashcards for.",
+        "label": "Flashcard Content",
+        "placeholder": "Enter the subject, key points or brief description of the material you want to create flashcards for.",
         "errors": {
           "required": "Flashcard content is required."
         }
       },
       "numberOfCards": {
-        "label":"Number of cards",
-        "placeholder":"Enter number of flashcards",
+        "label": "Number of cards",
+        "placeholder": "Enter number of flashcards",
         "errors": {
           "min": "You must generate at least 1 card.",
           "max": "You can generate up to 20 cards at a time."
@@ -21,6 +21,12 @@
     },
     "button": {
       "generateFlashcard": "Generate Flashcards"
+    },
+    "status": {
+      "generating": "Creating your flashcards. Hang tight!",
+      "saving": "Almost there... saving your flashcards.",
+      "done": "All set! Your flashcards are ready.",
+      "error": "Oops! Something went wrong. Please try again."
     }
   },
   "navbar": {

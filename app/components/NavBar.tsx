@@ -17,9 +17,9 @@ export default function NavBar() {
               <img
                 src="/brain-logo.svg"
                 alt="StudyAI Logo"
-                className="w-7 h-7"
+                className="w-8 h-8"
               />
-              <h1 className="hidden sm:block text-2xl font-semibold text-slate-900 dark:text-white">
+              <h1 className="hidden sm:block text-xl font-semibold text-slate-900 dark:text-white">
                 StudyAI
               </h1>
             </div>
